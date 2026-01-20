@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* controla o tamanho automaticamente do padding e margin ao alterar um 
+                            elemento*/
+}
+header{
+    padding: 3px;
+    margin: 0.2rem;
+    border: 3px solid #BDB76B;
+    background-color: #FFFACD;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    margin: 1rem;
+    border: 3px solid #BDB76B;
+    background-color: #FFFACD;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+}
+
+
+.header-bootom {
+    display: flex;
+    justify-content: center; /* Centraliza a busca */
+    align-items: center;
+    border-top: 3px solid #BDB76B;
+    padding: 10px 0 5px 0; /* padding: topo direita baixo esquerda */
+   
+}
+
+.navigation-body {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.search-box input{
+    width: 100%;          /* A largura agora ocupa 80% do espaço disponível */
+    max-width: 600px;    /* Limita para não ficar exageradamente grande em telas largas */
+    height: 45px;        /* Aumenta a altura vertical */
+    padding: 20px;     /* Espaçamento interno (nas laterais) */
+    font-size: 18px;     /* Texto maior para facilitar a leitura */
+    text-align: center;    /* Alinhado à esquerda é o padrão mais comum em lojas */
+    
+    border-radius: 25px; /* Deixa as bordas mais arredondadas e modernas */
+    border: 2px solid #6f3409; 
+    outline: none;       /* Remove aquele contorno azul padrão ao clicar */
+    margin: 1px;   /* Centraliza horizontalmente */
+    display: block;      /* Garante que o margin auto funcione */
+
+}
+
+
+
+body{
+    background-color: #FFFFE0;
+    color: #6f3409;
+    font-family: "Cabin", sans-serif; /*Importa a fonte definida no @import da primeira linha*/
+    font-weight: 400;
+}
