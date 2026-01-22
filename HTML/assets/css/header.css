@@ -1,0 +1,10 @@
+header{
+    margin: 0.5rem; /*MARGEM DE TODO LAYOUT DA PÁGINA*/
+    border: 3px solid #BDB76B;
+    border-radius: 10px;
+    margin: 0.3rem;
+    background-color: #FFFACD;
+    display: flex;
+    flex-direction: column;
+    
+}
