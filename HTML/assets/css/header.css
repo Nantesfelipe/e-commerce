@@ -1,10 +1,84 @@
-header{
-    margin: 0.5rem; /*MARGEM DE TODO LAYOUT DA PÁGINA*/
-    border: 3px solid #BDB76B;
+/* Estilizando o Header!! */
+
+.header-home{ 
+     display:grid; /* Grid foi usado no header para ter controle total dos elementos */
+    grid-column: 1 / -1;
+    border: 5px solid #191718;
     border-radius: 10px;
-    margin: 0.3rem;
-    background-color: #FFFACD;
-    display: flex;
-    flex-direction: column;
+    background-color: #6893b7;
+    font-size: 1.7rem;
+}
+
+
+.header-top{
+    display: grid;
+}
+
+.logo {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self:end; /* joga a logo para a direita da coluna*/
+    align-self: start;/* faz com que a logo fique no topo da linha*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+
+.title {
+    grid-column: 1;
+    grid-row: 1;
+    align-self:start; /*joga o titulo pro começo da coluna*/
+    margin: 10px 10px;
+}
+
+
+.header-bottom {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 10px;
+
+}
+
+.header-links {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.navigation-body a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+    border: 2px solid #191718;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: #191718;
+}
+
+
+a:hover{
+    background-color: #E0E5E9;
+    color:#6893b7;
+}
+.search-box{
+    
+    text-align: center;
+}
+
+.search-box input{
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    background-color: #E0E5E9;
+    outline: none;
+    font-size: 18px;
     
 }

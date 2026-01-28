@@ -2,47 +2,24 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* controla o tamanho automaticamente do padding e margin ao alterar um 
+    box-sizing: border-box;  /* controla o tamanho automaticamente do padding e margin ao alterar um 
                             elemento*/
 }
-
-body{
-    background-color: #FFFFE0;
-    color: #6f3409;
-    font-family: "Cabin", sans-serif; /*Importa a fonte definida no @import da primeira linha*/
-    font-weight: 400;
-}
-
-a{
-    color:#6f3409;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-h1{
-    margin: 0.3rem;
-    padding: 0.3rem;
-    font-size: 4rem;
-}
-
-input::placeholder{
-    color:#6f3409
-}
-
-main , body{
-
-    height: 100%;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-footer{
-    text-align: center;
-}
-main{
-    flex: 1;
     
+
+.layout{
+    display:grid;
+    grid-template-columns: minmax(240px,340px) 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 5px;
+}
+
+footer{
+
+    margin-top: 10px;
+    text-align: center;
+    border: 5px solid #191718;
+    grid-column: 1 / -1;
+   
 }
