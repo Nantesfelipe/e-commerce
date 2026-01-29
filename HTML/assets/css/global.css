@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  /* controla o tamanho automaticamente do padding e margin ao alterar um 
-                            elemento*/
+    box-sizing: border-box;
 }
-    
 
-.layout{
-    display:grid;
-    grid-template-columns: minmax(240px,340px) 1fr;
+
+.body {
+    font-family: "Cabin", sans-serif;
+    background-color: #E0E5E9;
+}
+
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(240px, 340px) 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    margin: 5px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
-footer{
-
-    margin-top: 10px;
+footer {
     text-align: center;
-    border: 5px solid #191718;
+    padding: 10px;
     grid-column: 1 / -1;
-   
+    
 }
+

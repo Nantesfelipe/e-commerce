@@ -1,59 +1,143 @@
-/* Estilizando o Header!! */
+/* Header */
 
-.header-home{ 
-     display:grid; /* Grid foi usado no header para ter controle total dos elementos */
+.header-home {
+    position: relative;
+    grid-template-rows: 30px auto auto auto;
+
+    display: grid;
     grid-column: 1 / -1;
+
     border: 5px solid #191718;
     border-radius: 10px;
     background-color: #6893b7;
+
     font-size: 1.7rem;
+    padding: 0 10px 10px;
+    gap: 6px;
+}
+.header-topbar {
+  grid-row: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0 10px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 5rem;
+
+  align-items: center;
+  
+  
+  background-color: #98b5cd;
+  
+
 }
 
-
-.header-top{
+.header-topbar a{
+    display: inline-flex;
+    align-items: center;
+    gap:6px;
+    color:#191718;
+    text-decoration: none;
+    height: 35px;
+    
+}
+.header-topbar a:hover{
+    background-color: #E0E5E9;
+    color: #6893b7;
+    
+}
+.header-top {
     display: grid;
+    grid-row: 2;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+}
+
+.title {
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self:end; /* joga a logo para a direita da coluna*/
-    align-self: start;/* faz com que a logo fique no topo da linha*/
-    width: 150px;
-    height: 150px;
+    
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin: 10px;
-
+    object-fit: cover; /*Imagem não distorce*/
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-
-.title {
-    grid-column: 1;
-    grid-row: 1;
-    align-self:start; /*joga o titulo pro começo da coluna*/
-    margin: 10px 10px;
+.links-center{
+    display: inline-flex;
+    gap:10px;
 }
 
+.cart-link {
+    position:absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:1.4rem;
+   
+}
+.login{
+    position: absolute;
+    left: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}   
+
+.cart-link:hover {
+    color: #6893b7;
+}
 
 .header-bottom {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    margin-top: 10px;
+    text-align: center;
+    grid-row: 3;
+}
 
+.search-box input {
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 20px;
+    padding: 10px;
+
+    background-color: #E0E5E9;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-box input:focus {
+    background-color: #d0d3d5;
 }
 
 .header-links {
-    grid-column: 1 / -1;
-    grid-row: 3;
+    position:relative;
     text-align: center;
-    margin-bottom: 20px;
-    
+    margin-bottom: 10px;
+    grid-row: 4;
 }
-.navigation-body a{
+
+.navigation-body{
+    text-align: center;
+}
+
+.navigation-body a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
+    margin-right: 10;
     padding: 8px 14px;
     border: 2px solid #191718;
     border-radius: 8px;
@@ -62,23 +146,7 @@
     color: #191718;
 }
 
-
-a:hover{
+.navigation-body a:hover {
     background-color: #E0E5E9;
-    color:#6893b7;
-}
-.search-box{
-    
-    text-align: center;
-}
-
-.search-box input{
-    border-radius: 20px;
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 0.5rem;
-    background-color: #E0E5E9;
-    outline: none;
-    font-size: 18px;
-    
+    color: #6893b7;
 }
