@@ -1,10 +1,7 @@
 /* Home */
 
 main {
-    display: flex;
-    flex-direction: column;
     grid-column: 1 / -1;
-
     margin-top: 5px;
     padding: 10px;
     border: 5px solid #191718;
@@ -22,9 +19,10 @@ main {
 
 
 .products {
+    gap: 80px;
     margin-top: 1rem;
     display: grid;
-    gap: 80px;
+    
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: start;
 }
@@ -62,9 +60,7 @@ main {
     
 }
 
-aside{
-   
-}
+
 
 .whatsapp-float{
     position: fixed;

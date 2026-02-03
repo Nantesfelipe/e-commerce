@@ -11,8 +11,8 @@
     border-radius: 10px;
     background-color: #6893b7;
 
-    font-size: 1.7rem;
-    padding: 0 10px 10px;
+
+    padding: 1 10px 10px;
     gap: 6px;
 }
 .header-topbar {
@@ -40,6 +40,8 @@
 }
 
 .header-topbar a{
+   
+    border-radius: 10px;
     display: inline-flex;
     align-items: center;
     gap:6px;
@@ -61,7 +63,8 @@
 }
 
 .title {
-    margin: 0;
+    
+    margin-left:20px ;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -85,7 +88,7 @@
     right: 20px;
     top:50%;
     transform: translateY(-50%);
-    font-size:1.4rem;
+    
    
 }
 .login{
@@ -93,7 +96,7 @@
     left: 20px;
     top:50%;
     transform: translateY(-50%);
-    font-size: 1.4rem;
+    
 }   
 
 .cart-link:hover {
@@ -106,6 +109,7 @@
 }
 
 .search-box input {
+    
     width: 100%;
     max-width: 400px;
 
