@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="descritpion" content="Página de produtos">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/productlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body class="body">
+    <header id="main-header" class="header-productlist">
+
+        <div class="header-productlist-top">
+            <h1 class="title">Todos nossos produtos!</h1>
+            <img class="logo-productlist" src="/assets/img/Logo.png">
+
+        </div>
+
+
+        <div class="search-box-productlist search-box">
+            <form id="search-form">
+                <input id="search-input" name="Busca" type="search" placeholder="Buscar produtos...">
+            </form>
+        </div>
+
+
+        <div class="header-links">
+
+            <nav class="navigation-body">
+                <a href="/assets/html/index.html">Voltar</a>
+                <a href="cart.html" id="cart-link" class="cartlist-link" aria-label="Carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </nav>
+
+
+        </div>
+
+
+    </header>
+
+    <aside class="categories" id="categories">
+        <h2>Categorias</h2>
+        <ul>
+            <li><a href="#">Roupas Masculinas</a></li>
+            <li><a href="#">Roupas Femininas</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Bonés</a></li>
+            <li><a href="#">Sapatos</a></li>
+            <li><a href="#">Meias</a></li>
+
+        </ul>
+
+
+
+    </aside>
+
+    <main>
+         <!-- CONTAINER DOS PRODUTOS -->
+        <section id="products-container" class="products-list">
+            <!-- produtos virão do JS -->
+        </section>
+    </main>
+
+    <footer>
+         <p>&copy; 2025 Style FN - Todos os direitos reservados.</p>
+    </footer>
+</body>
+    <script type="module" src="/assets/js/main.js" ></script>
+</html> 
