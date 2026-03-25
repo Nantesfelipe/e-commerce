@@ -1,0 +1,20 @@
+.about-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-container p {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.about-list li {
+    margin: 8px 0;
+    font-size: 18px;
+}

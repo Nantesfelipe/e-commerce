@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Carrinho de compras">
+    <title>Carrinho</title>
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/productlist.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="body">
+
+    <!-- HEADER -->
+    <header class="header-productlist">
+
+        <div class="header-productlist-top">
+            <h1 class="title">Seu Carrinho</h1>
+            <img class="logo-productlist" src="../assets/img/Logo.png">
+        </div>
+
+        <div class="search-box-productlist search-box">
+            <form>
+                <input type="search" placeholder="Buscar no carrinho...">
+            </form>
+        </div>
+
+        <div class="header-links">
+            <nav class="navigation-body">
+                <a href="../html/index.html">Voltar</a>
+                <a href="cart.html" class="cartlist-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <h2 class="title-products">Produtos no Carrinho</h2>
+
+        <section class="cart-list">
+
+            <!-- ITEM -->
+            <article class="cart-item">
+                <img src="../assets/img/products/shirt-nike.webp" alt="Produto">
+
+                <div class="cart-info">
+                    <h3>Camiseta Nike</h3>
+                    <p>R$ 10,00</p>
+                </div>
+
+                <button class="remove-btn">Remover</button>
+            </article>
+
+            <article class="cart-item">
+                <img src="../assets/img/products/shirt-vans.webp" alt="Produto">
+
+                <div class="cart-info">
+                    <h3>Camiseta Vans</h3>
+                    <p>R$ 20,00</p>
+                </div>
+
+                <button class="remove-btn">Remover</button>
+            </article>
+
+        </section>
+
+        <!-- TOTAL -->
+        <section class="cart-total">
+            <h3>Total: R$ 30,00</h3>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Style FN - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
