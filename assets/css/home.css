@@ -1,0 +1,100 @@
+/* Home */
+
+main {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+    padding: 10px;
+    border: 5px solid #191718;
+    border-radius: 10px;
+}
+
+.title-products {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  border: 1px solid #191718;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: px solid #191718;
+  
+}
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 12px 16px 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.product-card p {
+  margin: 0 16px 12px;
+  font-weight: bold;
+  color: #111;
+}
+
+.product-card button {
+  margin: 0 16px 16px;
+  width: calc(100% - 32px);
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #333;
+}
+
+
+
+
+
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    
+}
+
+.whatsapp{
+    width: 50px;
+    height: 50px;
+    color: #4FCE5D;
+    
+}   

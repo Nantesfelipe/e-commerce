@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/css/productlist.css">
     <link rel="stylesheet" href="/assets/css/promotions.css">
 </head>
-<body class="body">
+<body data-page="promotions" class="body">
     
      <header class="header-productlist" id="main-header">
         
@@ -20,10 +20,10 @@
             <img src="/assets/img/logo.png" alt="Logo" class="logo-productlist">
         </div>
 
-        <div class="header-productlist-actions">
-            <form id="search-form" class="search-box-promotions">
-                <input id="search-input" type="text" placeholder="Buscar..." class="search-box-productlist">
-            </form>
+        <div class="header-bottom"> <!--Botão de busca-->
+                    <form class="search-box" id="search-form">
+                        <input id="search-input" name="busca" type="search" placeholder="Buscar produtos..">
+                    </form>
             
         </div>
 
@@ -59,7 +59,7 @@
         <h2 class="title-products">Produtos em Promoção</h2>
 
         <!-- LISTA DINÂMICA -->
-        <section id="products-container" class="products-list">
+        <section id="products-container" class="products-container">
             <!-- produtos virão do JS -->
         </section>
 
@@ -68,5 +68,7 @@
     
     
 </body>
-    <script type="module" src="/assets/js/main.js" ></script>
+    <script type="module" src="/assets/js/main.js"></script>
+        <script type="module" src="/assets/js/products.js"></script>
+        <script type="module" src="/assets/js/search.js"></script>
 </html>

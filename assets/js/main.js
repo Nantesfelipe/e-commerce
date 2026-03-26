@@ -4,3 +4,4 @@ const productsContainer = document.getElementById("products-container");
 if(productsContainer){
     loadProducts();
 }
+
